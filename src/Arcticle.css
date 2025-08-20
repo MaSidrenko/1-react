@@ -1,4 +1,7 @@
 article {
-    background-color: rgb(64, 64, 64);
-    color: rgb(211, 211, 211);
+    background-color: rgb(211, 211, 211);
+    color: rgb(64, 64, 64);
+    padding: 25px;
+    margin: 0;
 }
+
