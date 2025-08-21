@@ -1,9 +1,12 @@
 import './Arcticle.css'
 
-function Article() {
+function Article(props) {
+    // let {title, content} = props;
     return (
         <article>
-            <h1>Cовременные десктопные процессоры архитектуры x86</h1>
+            <h1 style={{color:'darkgreen'}}>{props.title}</h1>
+            <p>{props.content}</p>
+            {/* <h1>Cовременные десктопные процессоры архитектуры x86</h1>
             <p>
                 Этот материал представляет собой обновлённую, существенно переработанную и дополненную версию статьи 2006 года, которая называлась «Современные десктопные процессоры архитектуры x86: общие принципы работы (x86 CPU FAQ 1.0)». Правда, чтобы не вводить потенциальных читателей в заблуждение словом «FAQ», мы решили назвать новый материал более правильным, как нам кажется, термином — «дайджест». Действительно, ведь большая его часть — это не ответы на конкретные вопросы, а разъяснения и краткие выжимки из чего угодно — от технической документации до истории развития микропроцессорной отрасли. Для кого предназначен данный материал? Нам видятся две группы потенциальных читателей.
             </p>
@@ -16,10 +19,18 @@ function Article() {
                 Ну и традиционное предупреждение: если иное не указано явно, то слово «процессор» в данном материале обозначает «x86(-64) процессор, предназначенный для установки в десктопы или (намного реже) мобильные компьютеры». Серверные процессоры, специализированные процессоры с архитектурой x86, всевозможные embedded-варианты — всё это в рамках статьи не рассматривается
             </p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, mollitia officia. Repudiandae fugiat nobis in expedita maiores odio eveniet quidem tempora quibusdam nam iste neque molestiae, excepturi, unde adipisci mollitia?</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, mollitia officia. Repudiandae fugiat nobis in expedita maiores odio eveniet quidem tempora quibusdam nam iste neque molestiae, excepturi, unde adipisci mollitia?
+
+            </p> */}
             
         </article>
     )
 }
+
+Article.defaultProps = {
+    title:      "Заголовок статьи",
+    content:    "Содержимое статьи",
+};
 
 export default Article;

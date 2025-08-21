@@ -4,10 +4,12 @@ import './index.css';
 import App from './components/app/App';
 import reportWebVitals from './reportWebVitals';
 
+let nav = {"Main":"/index", "News":"/news", "About Company":"/about", "Shop":"/shop", "Contacts":"/contacts"};
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App navigation = {nav} />
   </React.StrictMode>
 );
 

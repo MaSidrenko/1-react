@@ -1,9 +1,11 @@
 import logo from  '../img/logo.svg';
 import './Header.css'
-function Header() {
+function Header(props) {
+    let title = "Introduction to ReactJS";
     return (
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
+            <h1>{title}</h1>
             <p>
                 Edit <code>src/App.js</code> and save to reload.
             </p>
@@ -18,5 +20,6 @@ function Header() {
         </header>
     )
 }
+
 
 export default Header;
