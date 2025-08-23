@@ -1,0 +1,17 @@
+ul {
+  box-shadow: 0px 0px 25px #61dafb;
+  /* background-color: #282c34; */
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 1px solid #61dafb;
+}
+ul,
+li {
+  display: flex;
+  padding: 4px 10px;
+  justify-content: space-around;
+  text-align: center;
+}
