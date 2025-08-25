@@ -2,7 +2,7 @@ import './Arcticle.css'
 
 function Article(props) {
     // function Article( props ) {
-    const { title = "<br> Заголовок статьи <br>", content = "<br> Содержимое статьи <br>" } = props;
+    const { title = "<h1> Заголовок статьи </h1>", content = "<p> Содержимое статьи </p>" } = props;
     return (
         <article>
             <hr />
@@ -54,7 +54,8 @@ function Article(props) {
     );
 }
 // Является устаревшим подходом для функцианального подхода
-// с React 17+, новый подход использует деструкторизацию
+// (Все ещё используется в классовом (ООП) подходе)
+// с React 19, новый подход использует деструкторизацию
 // Пример выше
 // https://react.dev/blog/2024/04/25/react-19-upgrade-guide#removed-proptypes-and-defaultprops
 // https://react.dev/learn/passing-props-to-a-component
