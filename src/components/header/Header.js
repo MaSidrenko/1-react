@@ -1,4 +1,5 @@
-import './Header.css'
+import './Header.css';
+
 function Header(props) {
     let title = "Introduction to ReactJS";
     return (
