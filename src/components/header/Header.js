@@ -5,6 +5,7 @@ function Header(props) {
     return (
         <header className='App-header'>
             <h1>{title}</h1>
+            <h2>JSON - JavaScript Object Notation</h2>
             <p>
                 Edit <code>src/App.js</code> and save to reload.
             </p>
