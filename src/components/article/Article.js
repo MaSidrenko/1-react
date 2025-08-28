@@ -11,23 +11,30 @@ function Article(props) {
             <hr />
             <div className='app'>
 
-                <div className='card'>
+                <div className='card-block'>
                     {
                         Object.keys(db).map(
                             elem => {
                                 return (
-                                <div  className='card' key={elem}>
-                                    <img src={db[elem].photo} alt="phot" />
-                                    <div className='name'>{db[elem].name} {db[elem].surname}</div>
-                                    <div className='gender'>
-                                        {/* <img src={`../img/${db[elem].pol}.png`} alt="gender" /> */}
-                                        <img src={db[elem].pol === 'male' ? male : female} alt="gender" />
+                                    <div className='card' key={elem}>
+                                        <img className='photo' src={db[elem].photo} alt="photo" width={400} height={500} />
+                                        <div className='description'>
+                                            <div className='full-name'>
+                                                Full Name:
+                                                <br />
+                                                {db[elem].name} {db[elem].surname}
+                                                <br />
+                                                Age: {db[elem].age}
+                                            </div>
+                                            <div className='gender'>
+                                                <img src={db[elem].pol === 'male' ? male : female} alt="gender" />
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div className='age'>{db[elem].age}</div>
-                                </div>
-                            )
-                        }
-                    )
+                                )
+                            }
+                        )
                     }
                     {/* #region card-first-elem */}
 
