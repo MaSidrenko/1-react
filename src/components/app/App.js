@@ -5,6 +5,7 @@ import Nav from '../nav/Nav.js'
 import Logo from '../logo/Logo.js';
 import './App.css'
 import data from '../db.json';
+import Quiz from '../quiz/Quiz.js';
 
 function App(props) {
   let db = data.people;
@@ -14,6 +15,7 @@ function App(props) {
       <Nav navigation={props.navigation} />
       <Header />
       <Article db = {db} />
+      <Quiz></Quiz>
       <div>
         {/* <Article title="<h1>Cовременные десктопные процессоры архитектуры x86</h1>" content="
               <p>
